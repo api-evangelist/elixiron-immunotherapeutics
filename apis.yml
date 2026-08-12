@@ -1,8 +1,17 @@
 aid: elixiron-immunotherapeutics
 name: Elixiron Immunotherapeutics
-description: 'Elixiron Immunotherapeutics is a company surfaced via the API Evangelist harvest backlog
-  (source: secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Elixiron Immunotherapeutics (Cayman) Limited is a clinical-stage biopharmaceutical
+  company founded in 2017, with offices in Taipei, Taiwan and Cambridge, Massachusetts,
+  developing precision immunotherapies for neuroinflammation, autoimmune disease and
+  cancer. Its clinical pipeline is led by enrupatinib (EI-1071), a small-molecule CSF-1R
+  inhibitor in development for Alzheimer''s disease and other neurodegenerative indications,
+  and EI-001, a fully human anti-interferon-gamma monoclonal antibody in Phase 2 for
+  vitiligo, alongside preclinical EI-012 (anti-CD36) and EI-220 (mRNA) oncology programs.
+  The company publishes a corporate and investor-relations website only: there is no
+  developer portal, public API, SDK, webhook surface or machine-readable specification
+  of any kind on its own hosts.'
 url: https://raw.githubusercontent.com/api-evangelist/elixiron-immunotherapeutics/refs/heads/main/apis.yml
+image: https://elixiron.com/dist/images/common/og.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Immunotherapy
+- Life Sciences
+- Clinical Trials
+- Healthcare
+- Taiwan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,39 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/elixiron-immunotherapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/elixiron-immunotherapeutics-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://elixiron.com/
+- type: About
+  url: https://elixiron.com/about.php
+- type: Contact
+  url: https://elixiron.com/contact.php
+- type: News
+  url: https://elixiron.com/news.php
+- type: LinkedIn
+  url: https://www.linkedin.com/company/elixiron-immunotherapeutics
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Elixiron Immunotherapeutics is a clinical-stage biopharmaceutical company whose only
+    production host, elixiron.com, serves a PHP corporate and investor-relations site whose
+    57-URL sitemap contains no developer, API or documentation page at all.
+  evidence:
+  - url: https://elixiron.com/sitemap.xml
+    status: 200
+  - url: https://elixiron.com/openapi.json
+    status: 404
+  - url: https://elixiron.com/.well-known/agent-card.json
+    status: 404
+  - url: https://elixiron.com/llms.txt
+    status: 404
+  checked: '2026-08-12'
