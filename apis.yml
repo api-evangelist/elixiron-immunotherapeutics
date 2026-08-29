@@ -11,6 +11,17 @@ description: 'Elixiron Immunotherapeutics (Cayman) Limited is a clinical-stage b
   developer portal, public API, SDK, webhook surface or machine-readable specification
   of any kind on its own hosts.'
 url: https://raw.githubusercontent.com/api-evangelist/elixiron-immunotherapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://elixiron.com/dist/images/common/og.jpg
 x-type: company
 x-source: harvest:secondary-market
